@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content%}
+<h1 class="text-center p-3">Rate Your Movies</h1>
+{% for item in all %}
+    {{ item.name }}</br>
+    Length: {{ item.length }}
+
+{% endfor %}
+{% endblock %}
